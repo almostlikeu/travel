@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelGPT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800 antialiased">
+    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-600 to-emerald-400 flex items-center justify-center text-white font-bold">TG</div>
+        <div>
+          <h1 class="text-xl font-semibold">TravelGPT</h1>
+          <p class="text-xs text-slate-500 -mt-1">Smarter travel planning</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-4 items-center">
+        <a class="text-sm hover:underline" href="#features">Features</a>
+        <a class="text-sm hover:underline" href="#pricing">Pricing</a>
+        <a class="text-sm hover:underline" href="#faq">FAQ</a>
+        <a href="#login" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm shadow">Login</a>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
+      <section>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Travel planning — but actually helpful.
+        </h2>
+        <p class="mt-4 text-slate-600 max-w-xl">
+          Get personalized itineraries, instant Q&A about bookings, and travel policy-aware recommendations — all in one place.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#login" class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-indigo-600 text-white font-medium shadow hover:brightness-95">
+            🔐 Sign in to continue
+          </a>
+          <a href="#signup" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg border text-sm">Try free — no card</a>
+        </div>
+
+        <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-600">
+          <li>• Instant itinerary drafts from a single prompt</li>
+          <li>• Connect to your booking platforms</li>
+          <li>• Shareable plans for teams & clients</li>
+          <li>• Privacy-first: export & delete anytime</li>
+        </ul>
+      </section>
+
+      <aside id="login" class="relative">
+        <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8 w-full max-w-md mx-auto">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-xl font-semibold">Welcome back</h3>
+              <p class="text-sm text-slate-500">Sign in to continue to your dashboard</p>
+            </div>
+            <div class="text-slate-400 text-sm">Demo</div>
+          </div>
+
+          <form class="mt-6 grid gap-4" onsubmit="event.preventDefault(); alert('Demo login clicked');">
+            <label class="flex flex-col">
+              <span class="text-xs text-slate-500 mb-1">Email</span>
+              <input type="email" required placeholder="you@company.com" class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-200" />
+            </label>
+
+            <label class="flex flex-col">
+              <span class="text-xs text-slate-500 mb-1">Password</span>
+              <input type="password" required placeholder="••••••••" class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-200" />
+            </label>
+
+            <div class="flex items-center justify-between text-sm text-slate-500">
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="h-4 w-4 rounded border-slate-300" /> Remember me
+              </label>
+              <a class="hover:underline" href="#">Forgot?</a>
+            </div>
+
+            <button type="submit" class="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-xl py-3 bg-indigo-600 text-white font-medium">
+              Continue
+            </button>
+
+            <div class="pt-3">
+              <div class="relative text-center text-slate-400 text-sm">or continue with</div>
+              <div class="mt-3 flex gap-3">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 border rounded-xl py-2">GitHub</button>
+                <button class="flex-1 inline-flex items-center justify-center gap-2 border rounded-xl py-2">SSO</button>
+              </div>
+            </div>
+          </form>
+
+          <p class="mt-4 text-xs text-slate-500 text-center">No account? <a href="#signup" class="font-medium hover:underline">Create one</a></p>
+        </div>
+        <div class="hidden lg:block absolute -left-12 -bottom-10 w-64 h-64 rounded-3xl bg-gradient-to-br from-emerald-100 to-indigo-50 opacity-60 filter blur-3xl pointer-events-none"></div>
+      </aside>
+    </main>
+
+    <footer class="border-t py-8 mt-16">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-600">© 2025 TravelGPT — Built for efficient trips.</div>
+        <div class="flex gap-4 text-sm">
+          <a class="hover:underline" href="#">Privacy</a>
+          <a class="hover:underline" href="#">Terms</a>
+          <a class="hover:underline" href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
